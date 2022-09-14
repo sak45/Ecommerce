@@ -135,5 +135,30 @@ for (let i=0; i <imagesArray.length; i++) {
 }
 
 // carousel here for mobile version.
+const nextBtn = document.querySelector('.right-arrow');
+const previousBtn = document.querySelector('.left-arrow');
+let count = 0;
+mainImage.src = imagesArray[count].src;
+
+console.log(mainImage, 'here')
+
+nextBtn.addEventListener('click', function() {
+    if (count < imagesArray.length -1) {
+     console.log(mainImage.src = imagesArray[(count +=1)].src, 'here2')   
+    } else {
+        count = 0;
+        mainImage.src = imagesArray[count].src;
+    }
+})
+
+previousBtn.addEventListener('click', function() {
+    if (count > 0) {
+        mainImage.src = imagesArray[(count -=1)].src
+    } else {
+        count = imagesArray.length - 1;
+        mainImage.src = imagesArray[count].src;
+    }
+})
+
 
 
