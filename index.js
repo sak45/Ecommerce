@@ -105,7 +105,7 @@ for (let i=0; i <imagesArray.length; i++) {
     switch(images) {
         case img1:
           img1.addEventListener('click', function(e) {
-            mainImage.src='image-1.JPG.';
+            mainImage.src='./image-1.jpg';
             // if (e.target = img1 )  {
             //     img1.classList.add('border');
             // } else if (e.target != img1) {
@@ -115,18 +115,18 @@ for (let i=0; i <imagesArray.length; i++) {
         break;
         case img2:
             img2.addEventListener('click', function(e) {
-                mainImage.src='image-2.JPG.'
+                mainImage.src='./image-2.jpg'
                 console.log(e, 'whats happening here2')
             })
             break;
         case img3:
             img3.addEventListener('click', function() {
-                mainImage.src='image-3.JPG.'
+                mainImage.src='./image-3.jpg'
             })
             break;
         case img4:
             img4.addEventListener('click', function() {
-                mainImage.src='image-4.JPG.'
+                mainImage.src='./image-4.jpg'
             })
             break;
         default:
